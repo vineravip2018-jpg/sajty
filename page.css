@@ -24,8 +24,8 @@ h1, h2, h3 { font-family: Rubik, Arial, sans-serif; line-height: 1.08; letter-sp
 .top__link { font-weight: 700; font-size: 17px; min-height: 44px; padding: 0 20px; display: inline-flex; align-items: center; color: var(--ink); text-decoration: none; border: 2px solid var(--ink); border-radius: 10px; }
 .top__link:hover { background: var(--ink); color: var(--white); }
 
-.hero { max-width: var(--wrap); margin: 0 auto; padding: clamp(36px, 8vw, 96px) var(--gut) clamp(40px, 7vw, 84px); }
-.hero h1 { font-weight: 800; font-size: clamp(36px, 7.2vw, 92px); color: var(--emerald); max-width: 13ch; text-wrap: balance; }
+.hero { max-width: var(--wrap); margin: 0 auto; padding: clamp(28px, 5vw, 64px) var(--gut) clamp(40px, 7vw, 84px); }
+.hero h1 { font-weight: 800; font-size: clamp(36px, 5.6vw, 68px); color: var(--emerald); max-width: 18ch; text-wrap: balance; }
 .hero__lead { font-size: clamp(19px, 2.1vw, 24px); max-width: 34em; margin-top: clamp(20px, 3vw, 32px); color: var(--soft); }
 .hero__actions { display: flex; flex-wrap: wrap; align-items: center; gap: 14px 28px; margin-top: clamp(24px, 3.5vw, 40px); }
 .btn { display: inline-flex; align-items: center; justify-content: center; min-height: 54px; padding: 0 28px; background: var(--ink); color: var(--white); font-weight: 700; font-size: 19px; text-decoration: none; border-radius: 10px; }
