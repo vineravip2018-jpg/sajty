@@ -1,0 +1,78 @@
+/* Страница «Сайты» – бренд «Винера Николаева»: изумруд, мята, персик, хвоя; Rubik + PT Sans */
+:root {
+  --emerald: #0E6B56;
+  --mint: #DDF3EA;
+  --peach: #FF9E7A;
+  --peach-dark: #E0703F;
+  --ink: #10231E;
+  --white: #FFFFFF;
+  --soft: #46584f;
+  --edge: #cfe5da;
+  --wrap: 1180px;
+  --gut: clamp(16px, 4vw, 40px);
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body { font-family: "PT Sans", "Segoe UI", Arial, sans-serif; font-size: 19px; line-height: 1.55; color: var(--ink); background: var(--white); -webkit-text-size-adjust: 100%; }
+img { max-width: 100%; height: auto; display: block; }
+a { color: var(--emerald); }
+a:focus-visible { outline: 3px solid var(--peach-dark); outline-offset: 3px; border-radius: 4px; }
+h1, h2, h3 { font-family: Rubik, Arial, sans-serif; line-height: 1.08; letter-spacing: -0.015em; }
+
+.top { max-width: var(--wrap); margin: 0 auto; padding: 18px var(--gut); display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+.brand { display: flex; align-items: center; gap: 12px; text-decoration: none; color: var(--ink); font-family: Rubik, Arial, sans-serif; font-weight: 800; font-size: 20px; min-height: 44px; }
+.top__link { font-weight: 700; font-size: 17px; min-height: 44px; display: inline-flex; align-items: center; }
+
+.hero { max-width: var(--wrap); margin: 0 auto; padding: clamp(36px, 8vw, 96px) var(--gut) clamp(40px, 7vw, 84px); }
+.hero h1 { font-weight: 800; font-size: clamp(36px, 7.2vw, 92px); color: var(--emerald); max-width: 13ch; text-wrap: balance; }
+.hero__lead { font-size: clamp(19px, 2.1vw, 24px); max-width: 34em; margin-top: clamp(20px, 3vw, 32px); color: var(--soft); }
+.hero__actions { display: flex; flex-wrap: wrap; align-items: center; gap: 14px 28px; margin-top: clamp(24px, 3.5vw, 40px); }
+.btn { display: inline-flex; align-items: center; justify-content: center; min-height: 54px; padding: 0 28px; background: var(--ink); color: var(--white); font-weight: 700; font-size: 19px; text-decoration: none; border-radius: 10px; }
+.btn:hover { background: var(--emerald); }
+.btn--light { background: var(--white); color: var(--ink); }
+.btn--light:hover { background: var(--mint); }
+.plain { font-weight: 700; min-height: 44px; display: inline-flex; align-items: center; }
+
+.works { max-width: var(--wrap); margin: 0 auto; padding: 0 var(--gut) clamp(48px, 8vw, 104px); }
+.works > h2 { font-weight: 800; font-size: clamp(30px, 4.4vw, 52px); }
+.works__note { max-width: 36em; color: var(--soft); margin-top: 12px; }
+/* зигзаг: работы по очереди прижаты к левому и правому краю */
+.work { width: min(100%, 880px); margin-top: clamp(40px, 7vw, 88px); }
+.work--right { margin-left: auto; }
+.work__pic { display: block; border-radius: 14px; overflow: hidden; border: 1px solid var(--edge); background: var(--mint); }
+.work__pic img { width: 100%; }
+.work__text { padding-top: 20px; max-width: 34em; }
+.work__text h3 { font-weight: 700; font-size: clamp(24px, 3vw, 34px); }
+.work__text p { margin-top: 8px; color: var(--soft); }
+.work__open { display: inline-flex; align-items: center; min-height: 44px; margin-top: 6px; font-weight: 700; }
+
+.how { background: var(--mint); }
+.how__in { max-width: var(--wrap); margin: 0 auto; padding: clamp(48px, 8vw, 104px) var(--gut); }
+.how h2 { font-weight: 800; font-size: clamp(30px, 4.4vw, 52px); }
+.steps { list-style: none; counter-reset: step; display: grid; grid-template-columns: repeat(4, 1fr); gap: 28px; margin-top: clamp(28px, 4vw, 48px); }
+.steps li { counter-increment: step; border-top: 3px solid var(--emerald); padding-top: 18px; }
+.steps li::before { content: counter(step); font-family: Rubik, Arial, sans-serif; font-weight: 800; font-size: 44px; line-height: 1; color: var(--emerald); display: block; margin-bottom: 12px; }
+.steps h3 { font-weight: 700; font-size: 23px; line-height: 1.15; }
+.steps p { margin-top: 8px; font-size: 18px; color: var(--soft); }
+.facts { list-style: none; display: flex; flex-wrap: wrap; gap: 12px 14px; margin-top: clamp(32px, 4vw, 52px); }
+.facts li { background: var(--white); border-radius: 10px; padding: 12px 18px; font-weight: 700; font-size: 18px; position: relative; padding-left: 44px; }
+.facts li::before { content: ""; position: absolute; left: 16px; top: 50%; width: 16px; height: 9px; border-left: 3px solid var(--peach-dark); border-bottom: 3px solid var(--peach-dark); transform: translateY(-70%) rotate(-45deg); }
+
+.end { background: var(--ink); color: var(--white); padding: clamp(56px, 9vw, 120px) var(--gut); text-align: center; }
+.end img { margin: 0 auto 24px; }
+.end h2 { font-weight: 800; font-size: clamp(30px, 5vw, 60px); max-width: 16ch; margin: 0 auto; text-wrap: balance; }
+.end p { max-width: 30em; margin: 18px auto 28px; color: #c9ddd4; }
+.end__more { font-size: 17px; margin: 44px auto 0; }
+.end__more a { color: var(--peach); font-weight: 700; }
+
+@media (max-width: 900px) {
+  .steps { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 560px) {
+  body { font-size: 18px; }
+  .top__link { display: none; }
+  .steps { grid-template-columns: 1fr; gap: 22px; }
+  .btn { width: 100%; }
+  .facts li { width: 100%; }
+}
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
